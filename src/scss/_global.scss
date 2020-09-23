@@ -1,0 +1,288 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  position: relative;
+  background-color: #F7F7F7;
+  font-family: 'Circe';
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #000000;
+  overflow-x: hidden;
+}
+
+.container{
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1560px;
+}
+
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button:focus,
+input:focus {
+  outline: transparent;
+}
+
+.header-circle .header-circle__inner .header-circle__list {
+  list-style: none;
+  border-radius: 50%;
+  display: block;
+  border: 2px dashed #4F6FD8;
+  transform: translateX(80%);
+}
+
+.item--first{
+  top: 30px;
+  left: 120px;
+}
+.item--second{
+  top: 150px;
+  left: 2px;
+}
+.item--third{
+  top: 335px;
+  left: -50px;
+}
+.item--four{
+  top: 530px;
+  left: -5px;
+}
+.item--five{
+  top: 680px;
+  left: 130px;
+}
+
+.header__content .header__aside {
+  margin-bottom: 181px;
+}
+
+.item--small,
+.item--middle,
+.item--big {
+  max-width: 470px;
+  background-color: white;
+  border: 1px solid #4F6FD8;
+  border-radius: 30px;
+  padding: 40px 40px 50px 50px;
+  text-align: center;
+  margin-bottom: 181px;
+}
+
+.hide {
+  display:none;
+}
+.show {
+  display: flex;
+}
+
+
+
+
+.menu {
+  width: 712px;
+  /* margin: 0 auto; */
+  /* padding: 0; */
+  list-style: none;
+  padding-left: 32px;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  
+}
+
+.menu__spacer {
+  background: #4F6FD8;
+  transition: border-radius 0.5s;
+}
+
+.menu__spacer--top {
+  height: 283px;
+  border-radius: 25px 25px 0 0;
+}
+
+.menu__spacer--bottom {
+  height: 570px;
+  border-radius: 0 0 25px 25px;
+}
+
+.menu__item {
+  position: relative;
+  background: #4F6FD8;
+  height: 42px;
+  padding: 10px 80px 55px 80px;
+  z-index: 0;
+  transition: border-radius 0.5s;
+}
+
+.menu__bg {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 199px);
+  height: 100%;
+  background: #DCE6FF;
+  z-index: -1;
+  transform: translateX(calc(-100% - 32px));
+  border-radius: 41px;
+  transition: transform 0.5s;
+}
+
+.menu__link {
+  line-height: 42px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 800;
+  font-size: 36px;
+  letter-spacing: 0.02em;
+  &:hover{
+    color: #3D5DC6;
+  }
+}
+
+
+
+ /* Option */
+
+ .option {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+/* Check */
+
+.check {
+  padding-left: 1.2em;
+  margin-bottom: 11px;
+}
+
+.check__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  
+}
+
+.check__box {
+  position: absolute;
+  margin-left: -28px;
+  width: 22px;
+  height: 22px;
+  background-image: url('../images/checkbox-off.svg');
+ 
+}
+
+/* Checked */
+
+.check__input:checked + .check__box {
+  background-image: url('../images/checkbox-on.svg');
+}
+
+/* Focused */
+
+/* .check__input:focus + .check__box {
+  background-image: url(images/off-focused.svg);
+}
+
+.check__input:checked:focus + .check__box {
+  background-image: url(images/on-focused.svg);
+} */
+
+/* Disabled */
+
+/* .check__input:disabled + .check__box {
+  background-image: url(images/off-disabled.svg);
+}
+
+.check__input:checked:disabled + .check__box {
+  background-image: url(images/on-disabled.svg);
+} */
+
+.popup,
+.popup-1,
+.popup-2,
+.popup-3,
+.popup-4,
+.popup-5{
+  display: flex;
+  display: none;
+  z-index: 4;
+  position: relative;
+}
+
+.popup__text{
+  font-weight: normal;
+  font-size: 20px;
+  min-width: 360px;
+  margin-bottom: 18px;  
+}
+
+.popup__garbage,
+.popup__garbage-1,
+.popup__garbage-2,
+.popup__garbage-3,
+.popup__garbage-4,
+.popup__garbage-5{
+  position: absolute;
+  left: 320px;
+  cursor: pointer;
+  width: 21px;
+  height: 25px;
+}
+
+.descr--1{
+  margin-bottom: 70px !important;
+}
+
+.descr--2{
+  margin-bottom: 70px !important;
+}
+
+.descr--3{
+  margin-bottom: 26px !important;
+}
+
+.box__title-one,
+.box__title-four{
+  margin-bottom: 65px !important;
+}
+
+.descr--four{
+  padding: 0 35px 0 35px; 
+  margin-bottom: 10px !important;
+}
+
+.individual__btn-1c{
+  margin-bottom: 107px !important; 
+}
